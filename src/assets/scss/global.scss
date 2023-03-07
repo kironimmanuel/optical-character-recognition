@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap");
 
 :root {
   --grey-900: hsl(209, 61%, 16%);
@@ -24,8 +24,8 @@
   --white: #fff;
   --black: #222;
 
-  --ff-primary: 'Source Code Pro', monospace;
-  --ff-secondary: 'Montserrat', serif;
+  --ff-primary: "Source Code Pro", monospace;
+  --ff-secondary: "Montserrat", serif;
   --transition: all 0.2s linear;
   --spacing: 0.25rem;
   --radius: 0.25rem;
@@ -177,5 +177,104 @@ p {
   transition: var(--transition);
   &:hover {
     color: var(--primary-5);
+  }
+}
+.icon {
+  margin-bottom: -0.5rem;
+}
+.upload-icon {
+  display: block;
+  text-align: center;
+  font-size: 12rem;
+  margin: auto;
+}
+.grid-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.input-container {
+  border-radius: var(--radius);
+}
+.result-container {
+  border: 1px solid var(--black);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: var(--white);
+  cursor: pointer;
+  .icon {
+    display: block;
+    margin-left: auto;
+  }
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  text-align: left;
+  input {
+    display: none;
+  }
+  label,
+  button {
+    cursor: pointer;
+    background-color: var(--grey-500);
+    padding: 0.45rem 0.75rem;
+    border-radius: var(--radius);
+    color: var(--white);
+    transition: var(--transition);
+    font-size: 0.575rem;
+    &:hover {
+      color: var(--black);
+    }
+  }
+  button {
+    font-family: var(--ff-primary);
+    text-transform: capitalize;
+    border: none;
+    margin-left: 0.5rem;
+  }
+}
+@media (min-width: 552px) {
+  .btn-container {
+    justify-content: space-between;
+    label,
+    button {
+      font-size: 0.875rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .grid-container {
+    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.loading-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #505050;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
