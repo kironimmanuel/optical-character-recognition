@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap");
 
 :root {
-  --grey-500: hsl(210, 22%, 49%);
-  --primary-50: hsl(216, 12%, 92%);
+  --clr-secondary: #0d1117;
+  --clr-secondary-light: #25292e;
+  --clr-primary: #dd5353;
+  --clr-primary-light: #e06464;
 
   --ff-primary: "Source Code Pro", monospace;
   --ff-secondary: "Montserrat", serif;
@@ -21,8 +23,8 @@
 
 body {
   font-family: var(--ff-primary);
-  background: var(--primary-50);
-  color: black;
+  background: var(--clr-secondary);
+  color: white;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -150,10 +152,9 @@ p {
   border-radius: var(--radius);
 }
 .result-container {
-  border: 1px solid black;
   border-radius: var(--radius);
   padding: 1rem;
-  background: white;
+  background: var(--clr-secondary-light);
   cursor: pointer;
   .icon {
     display: block;
@@ -172,14 +173,14 @@ p {
   label,
   button {
     cursor: pointer;
-    background-color: var(--grey-500);
+    background-color: var(--clr-primary);
     padding: 0.45rem 0.75rem;
     border-radius: var(--radius);
     color: white;
     transition: var(--transition);
     font-size: 0.575rem;
     &:hover {
-      color: black;
+      background-color: var(--clr-primary-light);
     }
   }
   button {

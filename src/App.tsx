@@ -69,7 +69,7 @@ const App = () => {
     <section className="section section-center">
       <header>
         <h1 className="section-title">
-          paper text <VscBracketDot className="icon" />
+          paper text OCR <VscBracketDot className="icon" />
         </h1>
         <h3 className="section-text">Extract text from images</h3>
       </header>
