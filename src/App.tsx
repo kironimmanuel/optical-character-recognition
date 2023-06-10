@@ -69,9 +69,9 @@ const App = () => {
     <section className="section section-center">
       <header>
         <h1 className="section-title">
-          paper text OCR <VscBracketDot className="icon" />
+          textLens <VscBracketDot className="icon" />
         </h1>
-        <h3 className="section-text">Extract text from images</h3>
+        <h3 className="section-text">Effortlessly Convert Images Into Editable Text</h3>
       </header>
       <div className="grid-container">
         <div className="input-container">
